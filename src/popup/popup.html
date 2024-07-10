@@ -1,19 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Job Post Styler</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="popup.css">
+  <title>Job Juggler</title>
 </head>
 <body>
-  <img src="assets/logo.png" alt="Job Post Styler Logo">
-  <h1>Job Post Styler</h1>
-  <div>
-    <label><input type="checkbox" id="onsite" checked> Onsite</label>
-    <label><input type="checkbox" id="remote" checked> Remote</label>
-    <label><input type="checkbox" id="monthAgo" checked> Month Ago</label>
-    <label><input type="checkbox" id="applied" checked> Applied</label>
-    <label><input type="checkbox" id="dollarSign" checked> Dollar Sign</label>
-  </div>
+  <h1>Job Juggler</h1>
+  <form id="settingsForm">
+    <label>
+      <input type="checkbox" id="onsiteCheckbox">
+      Remote only. (Hide all on-site jobs)
+    </label><br>
+    <label>
+      <input type="checkbox" id="remoteCheckbox">
+      Highlight remote jobs with green
+    </label><br>
+    <label>
+      <input type="checkbox" id="monthAgoCheckbox">
+      Highlight Jobs Posted a Month Ago
+    </label><br>
+    <label>
+      <input type="checkbox" id="appliedCheckbox">
+      Hide jobs you've already applied to
+    </label><br>
+    <label>
+      <input type="checkbox" id="dollarSignCheckbox">
+      Only show jobs that posted the salary amount
+    </label><br>
+    <button type="button" id="saveButton">Save</button>
+  </form>
   <script src="popup.js"></script>
 </body>
 </html>
