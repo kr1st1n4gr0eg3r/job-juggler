@@ -1,0 +1,12 @@
+.onsite-job {
+    background-color: #ff0000b8; /* Red background for onsite jobs */
+  }
+  
+  .remote-job {
+    background-color: #b5ffb5; /* Green background for remote jobs */
+  }
+  
+  .month-ago-job {
+    background-color: #ff0000b8; /* Red background for month ago jobs */
+  }
+  
