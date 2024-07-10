@@ -1,7 +1,7 @@
 # JobJuggler: Master the Art of Job Listing Acrobatics!
 ### A Chrome extension that will highlight or hide certain parameters as needed in your arduous job hunt.
 
-![JobJuggler](assets/logo.png)
+![JobJuggler](https://raw.githubusercontent.com/kr1st1n4gr0eg3r/job-juggler/main/assets/giphy.webp)
 
 ## Overview
 
