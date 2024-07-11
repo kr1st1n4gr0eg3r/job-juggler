@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="popup.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Job Juggler</title>
+  </head>
+
+  <body>
+    <div class="logo-container">
+      <img class="clown-logo" src="../../assets/icon.png" alt="Job Juggler Logo" />
+      <h4>Job Juggler</h4>
+    </div>
+    <form id="settingsForm">
+      <span class="inputs">
+        <label>
+          <input type="checkbox" id="onsiteCheckbox" />
+          Remote only
+        </label>
+        <small>(Hide all on-site jobs)</small>
+      </span>
+
+      <span class="inputs">
+        <label>
+          <input type="checkbox" id="remoteCheckbox" />
+          Highlight remote jobs with green.
+        </label>
+        <small>(If you don't want to hide
+          non-remote jobs)</small>
+      </span>
+
+      <span class="inputs">
+        <label>
+          <input type="checkbox" id="monthAgoCheckbox" />
+          Highlight Jobs Posted a Month Ago
+        </label>
+      </span>
+
+      <span class="inputs">
+        <label>
+          <input type="checkbox" id="appliedCheckbox" />
+          Hide jobs you've already applied to
+        </label>
+      </span>
+
+      <span class="inputs">
+        <label>
+          <input type="checkbox" id="dollarSignCheckbox" />
+          Only show jobs that posted the salary amount
+        </label>
+      </span>
+      <span class="savebutton">
+      <button type="button" id="saveButton">Save</button>
+    </span>
+    </form>
+   
+    <script src="popup.js"></script>
+  </body>
+</html>
