@@ -1,19 +1,57 @@
+html {
+  font-size: 16px;
+}
+
 body {
-    font-family: Arial, sans-serif;
+  font-family: "Noto Sans", sans-serif;
     padding: 20px;
     background: ghostwhite;
   }
   
   h1 {
-    font-size: 18px;
+    font-size: 2.986rem;
     margin-bottom: 10px;
     background: url('assets/logo.png') no-repeat left center;
-    padding-left: 40px; /* Adjust based on logo size */
   }
   
+h4 {
+  font-size: 1.728rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+small {
+font-size:  0.694rem;
+color: darkgrey;
+}
+
   label {
-    display: block;
-    margin-bottom: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  button {
+    background: PowderBlue;
+    border: none;
+    padding: 1rem;
+    border-radius: 50px;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+  }
+
+  img.clown-logo {
+  height: 40px;
+  }
+
+  .inputs {
+    padding: 0.25rem 0rem;
+  }
+
+  span.inputs small {
+    padding-left: 22px;
   }
   
   #settingsForm {
@@ -21,3 +59,15 @@ body {
     flex-direction: column;
     flex-wrap: nowrap;
   }
+
+.logo-container {
+  display: flex;
+  width: 300px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.logo-container h4 {
+  padding-left: 1rem;
+}

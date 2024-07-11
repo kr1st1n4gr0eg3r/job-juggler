@@ -1,27 +1,29 @@
-  {
-    "manifest_version": 3,
-   "name": "JobJuggler",
-    "version": "1.0",
-    "description": "A Chrome extension that will highlight or hide certain parameters as needed in your arduous job hunt.",
-    "permissions": ["activeTab", "storage"],
-    "background": {
-      "service_worker": "src/background.js"
-    },
-    "action": {
-      "default_popup": "src/popup/popup.html",
-      "default_icon": {
-        "48": "assets/icon.png"
-      }
-    },
-    "content_scripts": [
-      {
-        "matches": ["<all_urls>"],
-        "js": ["src/content.js"],
-        "css": ["styles.css"]
-      }
-    ],
-    "icons": {
-      "48": "assets/icon.png"
+{
+  "manifest_version": 3,
+  "name": "Job Juggler",
+  "version": "1.0",
+  "description": "A Chrome extension to help you manage job postings on LinkedIn.",
+  "icons": {
+    "16": "assets/icon-16.png",
+    "48": "assets/icon-48.png",
+    "128": "assets/icon-128.png"
+  },
+  "action": {
+    "default_popup": "src/popup/popup.html",
+    "default_icon": {
+      "16": "assets/icon-16.png",
+      "48": "assets/icon-48.png",
+      "128": "assets/icon-128.png"
     }
-  }
-  
+  },
+  "background": {
+    "service_worker": "src/background.js"
+  },
+  "permissions": ["storage", "activeTab", "declarativeContent"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/content.js"]
+    }
+  ]
+}
